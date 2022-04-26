@@ -1,143 +1,64 @@
-.hola {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  height: 70px;
-}
-
-.si {
-   font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  height: 70px;
-}
-
-.gasnoble{
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  height: 70px;
-  background-color: PaleTurquoise;
-  color: black;
-}
-
-.nometales {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  height: 70px;
-  background-color: #3A5BB9;
-}
-
-.halogenos {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #FF06DD;
-}
-
-.alcalinos {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #FF4A06;
-}
-
-.alcalinoterreos {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #E1C514;
-}
-
-.transicion {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #61FF00;
-}
-
-.metales {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #F7FF00;
-}
-
-.metaloides {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #2DFF6D;
-}
-
-.lantanidos {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #00FAAE;
-}
-
-.actinidos {
-  font-size: 40px;
-  color: black;
-  border: 1px solid black;
-  text-align:center;
-  background-color: #45B94C;
-}
-
+.gasnoble
+{background-color:paleturquoise}
+.nometales
+{background-color:Darkviolet}
+.metaloides
+{background-color:Lime}
+.otrosmetales
+{background-color:Moccasin}
 td:hover{
-  opacity: 7;
-  transition: all;
+  opacity: 1;
+  transicion: all;
   visibility: visible;
-  brackground: red;
-transform: scale(1.5);} 
+  background: #7B68EE;
+}
+.otrosmetalesdetransicion
+{background-color:Yellow}
 
 .zoom{
-  transition:width 1s, heigth 1s, transform 1;
+  transition:width 1s, height 1s, transform 1s;
 }
 .zoom:hover{
-  transform: scale (1.5);
+  transform: scale(1.5):
 }
-
+.metalesalcalinos
+{background-color:coral}
+.alcalinoterreos
+{background-color:SandyBrown} 
+.halogenos
+{background-color:Fuchsia}
+.elementosdesconocidos
+{background-color:Gray}
+.lantanidos
+{background-color:LightGreen}
+.actinidos
+{background-color:LimeGreen}
 .modal-contenido{
-  background-color:rgba (40,114,51,0.5);
+  background-color:rgba(40,114,51,0.5);
   color:#ffffff;
   width:300px;
   padding: 10px 20px;
-  box-shadow: 5px 5px 5px rgba (12, 12,12, 0.527);
+  box-shadow: 5px 5px 5px rgba(12, 12, 12, 0.527);
   margin: 2rem auto;
   position: relative;
-  border-style: outset;
+  border-style:outset;
   border-radius: 6px;
   overflow: hidden;
   z-index: 1;
-  backdrop-filter: saturate(180%) blur(20px);
 }
 .modal{
   background-color: rgba(0,0,0,.6);
-  position: fixed; 
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0; 
-  pointer-events: none;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0; 
+  pointer-events:none;
   transition: all 1s;
 }
 :target{
   opacity:1;
-  pointer-events: auto;
+  pointer-events:auto;
   border-radius: 8px;
 }
